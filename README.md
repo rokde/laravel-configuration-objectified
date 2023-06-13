@@ -22,19 +22,6 @@ php artisan vendor:publish --tag="laravel-configuration-objectified-migrations"
 php artisan migrate
 ```
 
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="laravel-configuration-objectified-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
 Optionally, you can publish the views using
 
 ```bash

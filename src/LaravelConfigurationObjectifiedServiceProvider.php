@@ -17,7 +17,6 @@ class LaravelConfigurationObjectifiedServiceProvider extends PackageServiceProvi
          */
         $package
             ->name('laravel-configuration-objectified')
-            ->hasConfigFile()
             ->hasViews()
             ->hasMigration('create_laravel-configuration-objectified_table')
             ->hasCommand(LaravelConfigurationObjectifiedCommand::class);
