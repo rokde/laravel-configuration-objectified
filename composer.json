@@ -60,10 +60,7 @@
         "laravel": {
             "providers": [
                 "Rokde\\LaravelConfigurationObjectified\\LaravelConfigurationObjectifiedServiceProvider"
-            ],
-            "aliases": {
-                "LaravelConfigurationObjectified": "Rokde\\LaravelConfigurationObjectified\\Facades\\LaravelConfigurationObjectified"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
