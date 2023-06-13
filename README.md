@@ -15,12 +15,6 @@ You can install the package via composer:
 composer require rokde/laravel-configuration-objectified
 ```
 
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="laravel-configuration-objectified-views"
-```
-
 ## Usage
 
 ```php

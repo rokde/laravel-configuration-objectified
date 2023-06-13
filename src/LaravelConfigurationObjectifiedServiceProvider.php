@@ -17,7 +17,6 @@ class LaravelConfigurationObjectifiedServiceProvider extends PackageServiceProvi
          */
         $package
             ->name('laravel-configuration-objectified')
-            ->hasViews()
             ->hasCommand(LaravelConfigurationObjectifiedCommand::class);
     }
 }
