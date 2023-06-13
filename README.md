@@ -15,13 +15,6 @@ You can install the package via composer:
 composer require rokde/laravel-configuration-objectified
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-configuration-objectified-migrations"
-php artisan migrate
-```
-
 Optionally, you can publish the views using
 
 ```bash
