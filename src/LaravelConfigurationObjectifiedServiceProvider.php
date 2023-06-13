@@ -2,9 +2,9 @@
 
 namespace Rokde\LaravelConfigurationObjectified;
 
+use Rokde\LaravelConfigurationObjectified\Commands\LaravelConfigurationObjectifiedCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Rokde\LaravelConfigurationObjectified\Commands\LaravelConfigurationObjectifiedCommand;
 
 class LaravelConfigurationObjectifiedServiceProvider extends PackageServiceProvider
 {
