@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Rokde\LaravelConfigurationObjectified\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelConfigurationObjectifiedCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-configuration-objectified';
 
     public $description = 'My command';
 
