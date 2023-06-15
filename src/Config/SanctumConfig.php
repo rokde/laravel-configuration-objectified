@@ -46,10 +46,10 @@ class SanctumConfig extends Config implements ConfigurationIdentifier
      */
     public function guard(string $guard): self
     {
-        $guards = $this->config->get('guards', []);
+        $guards = $this->config->get('guard', []);
         $guards[] = $guard;
 
-        $this->config->put('guards', $guards);
+        $this->config->put('guard', $guards);
 
         return $this;
     }
