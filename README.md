@@ -17,10 +17,47 @@ composer require rokde/laravel-configuration-objectified
 
 ## Usage
 
+Go to your `config` folder in your laravel project and replace the `return []` statement with this (e.g. `app.php`):
 ```php
-$laravelConfigurationObjectified = new Rokde\LaravelConfigurationObjectified();
-echo $laravelConfigurationObjectified->echoPhrase('Hello, Rokde!');
+<?php
+
+use Rokde\LaravelConfigurationObjectified\Config\AppConfig;
+
+return AppConfig::makeDefault()
+    ->toArray();
 ```
+
+If you want to configure something you can use typed methods. For example changing the locale in `app.php` will result in this:
+```php
+<?php
+
+use Rokde\LaravelConfigurationObjectified\Config\AppConfig;
+
+return AppConfig::makeDefault()
+    ->locale('de')
+    ->toArray();
+```
+
+These are the following Config classes with their corresponding config file
+
+| file             | Config                                |
+|------------------|---------------------------------------|
+| app.php          | `AppConfig::makeDefault()->toArray()` |
+| auth.php         | `AuthConfig::makeDefault()->toArray()` |
+| broadcasting.php | `BroadcastingConfig::makeDefault()->toArray()` |
+| cache.php        | `CacheConfig::makeDefault()->toArray()` |
+| cors.php         | `CorsConfig::makeDefault()->toArray()` |
+| database.php     | `DatabaseConfig::makeDefault()->toArray()` |
+| filesystem.php   | `FilesystemsConfig::makeDefault()->toArray()` |
+| hashing.php      | `HashingConfig::makeDefault()->toArray()` |
+| logging.php      | `LoggingConfig::makeDefault()->toArray()` |
+| mail.php         | `MailConfig::makeDefault()->toArray()` |
+| queue.php        | `QueueConfig::makeDefault()->toArray()` |
+| sanctum.php      | `SanctumConfig::makeDefault()->toArray()` |
+| services.php     | `ServicesConfig::makeDefault()->toArray()` |
+| session.php      | `SessionConfig::makeDefault()->toArray()` |
+| view.php         | `ViewConfig::makeDefault()->toArray()` |
+
 
 ## Testing
 
