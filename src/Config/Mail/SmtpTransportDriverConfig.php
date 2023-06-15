@@ -44,9 +44,9 @@ class SmtpTransportDriverConfig extends Config
         return $this;
     }
 
-    public function port(int $port): self
+    public function port(int|string $port): self
     {
-        $this->config->put('port', $port);
+        $this->config->put('port', (int) $port);
 
         return $this;
     }
