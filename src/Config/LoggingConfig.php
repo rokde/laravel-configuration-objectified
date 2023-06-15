@@ -58,10 +58,10 @@ class LoggingConfig extends Config implements ConfigurationIdentifier
      *
      * @return $this
      */
-    public function deprecations(string $channel, bool|string $trace = true): self
+    public function deprecations(?string $channel, bool|string $trace = true): self
     {
         $this->config->put('deprecations', [
-            'channel' => $channel,
+            'channel' => $channel === null ? 'null' : $channel,
             'trace' => (bool) $trace,
         ]);
 
