@@ -203,7 +203,7 @@ class AppConfig extends Config implements ConfigurationIdentifier
      */
     public function maintenance(string $driver, ?string $store = null): self
     {
-        $this->config->put('driver', $driver);
+        $this->config->put('maintenance', $driver);
         if ($driver === 'cache') {
             $this->config->put('store', $store ?? 'redis');
         }
