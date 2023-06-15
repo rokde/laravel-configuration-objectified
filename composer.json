@@ -3,8 +3,7 @@
     "description": "Objectified version of laravel configuration files",
     "keywords": [
         "laravel",
-        "configuration",
-        "config-builder"
+        "configuration"
     ],
     "homepage": "https://github.com/rokde/laravel-configuration-objectified",
     "license": "MIT",
