@@ -2,7 +2,6 @@
 
 namespace Rokde\LaravelConfigurationObjectified;
 
-use Rokde\LaravelConfigurationObjectified\Commands\LaravelConfigurationObjectifiedCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -16,7 +15,6 @@ class LaravelConfigurationObjectifiedServiceProvider extends PackageServiceProvi
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('laravel-configuration-objectified')
-            ->hasCommand(LaravelConfigurationObjectifiedCommand::class);
+            ->name('laravel-configuration-objectified');
     }
 }
