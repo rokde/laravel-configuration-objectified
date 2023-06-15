@@ -51,7 +51,7 @@ class SmtpTransportDriverConfig extends Config
         return $this;
     }
 
-    public function encryption(string $encryption): self
+    public function encryption(?string $encryption): self
     {
         $this->config->put('encryption', $encryption);
 
