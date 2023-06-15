@@ -1,12 +1,11 @@
 {
     "name": "rokde/laravel-configuration-objectified",
     "description": "Objectified version of laravel configuration files",
+    "license": "MIT",
     "keywords": [
         "laravel",
         "configuration"
     ],
-    "homepage": "https://github.com/rokde/laravel-configuration-objectified",
-    "license": "MIT",
     "authors": [
         {
             "name": "Robert Kummer",
@@ -14,10 +13,11 @@
             "role": "Developer"
         }
     ],
+    "homepage": "https://github.com/rokde/laravel-configuration-objectified",
     "require": {
         "php": "^8.2",
-        "spatie/laravel-package-tools": "^1.15.0",
-        "illuminate/contracts": "^10.0"
+        "illuminate/contracts": "^10.0",
+        "spatie/laravel-package-tools": "^1.15.0"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
@@ -31,6 +31,8 @@
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "Rokde\\LaravelConfigurationObjectified\\": "src/",
@@ -42,19 +44,12 @@
             "Rokde\\LaravelConfigurationObjectified\\Tests\\": "tests/"
         }
     },
-    "scripts": {
-        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
-        "analyse": "vendor/bin/phpstan analyse",
-        "test": "vendor/bin/pest",
-        "test-coverage": "vendor/bin/pest --coverage",
-        "format": "vendor/bin/pint"
-    },
     "config": {
-        "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
             "phpstan/extension-installer": true
-        }
+        },
+        "sort-packages": true
     },
     "extra": {
         "laravel": {
@@ -63,6 +58,11 @@
             ]
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "format": "vendor/bin/pint",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage"
+    }
 }
