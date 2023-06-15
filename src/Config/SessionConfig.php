@@ -66,9 +66,9 @@ class SessionConfig extends Config implements ConfigurationIdentifier
      *
      * @return $this
      */
-    public function lifetime(int $lifetimeInMinutes): self
+    public function lifetime(int|string $lifetimeInMinutes): self
     {
-        $this->config->put('lifetime', $lifetimeInMinutes);
+        $this->config->put('lifetime', (int) $lifetimeInMinutes);
 
         return $this;
     }
